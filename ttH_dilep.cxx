@@ -141,7 +141,7 @@ void ttH_dilep::UserValues(){
 
         // cuts for electrons
         EtaCutEle =  999.;
-        Event::initial_PtCutEle  = -999.*GeV;
+        initial_PtCutEle  = -999.*GeV;
         IsoCutEle = 0.4;
 
         // cuts for muons
@@ -2331,7 +2331,6 @@ void ttH_dilep::FillHistograms(THistos &histo){
             int kh = 0;
             int kl = 1;
 
-            cout << "Event: " << Event::event_counter << endl;
             cout << "1 -> " << myTruthLepVec[0].Pt() << endl;
             if ( myTruthLepVec[1].Pt() > myTruthLepVec[0].Pt() ) { kh = 1 ; kl = 0 ;}
             // Highest pT lepton l1-------------------------------------------

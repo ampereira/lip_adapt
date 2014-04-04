@@ -59,6 +59,7 @@ public :
   Int_t CutTriggerEle;
   Int_t CutTriggerMuo;
   Int_t CutTriggerEleMuo;
+  Int_t m_hfor;
 
   Int_t alldata_ele;
   Int_t alldata_muo;
